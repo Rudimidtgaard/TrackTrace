@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\TrackTraceAPI\\TrackTrace\\TrackTrace.csproj": {}
+    "C:\\GitPrivate\\TrackTrace\\TrackTrace.csproj": {}
   },
   "projects": {
-    "C:\\Git\\TrackTraceAPI\\TrackTrace\\TrackTrace.csproj": {
+    "C:\\GitPrivate\\TrackTrace\\TrackTrace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\TrackTraceAPI\\TrackTrace\\TrackTrace.csproj",
+        "projectUniqueName": "C:\\GitPrivate\\TrackTrace\\TrackTrace.csproj",
         "projectName": "TrackTrace",
-        "projectPath": "C:\\Git\\TrackTraceAPI\\TrackTrace\\TrackTrace.csproj",
-        "packagesPath": "C:\\Users\\Rudim\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\TrackTraceAPI\\TrackTrace\\obj\\",
+        "projectPath": "C:\\GitPrivate\\TrackTrace\\TrackTrace.csproj",
+        "packagesPath": "C:\\Users\\RUP\\.nuget\\packages\\",
+        "outputPath": "C:\\GitPrivate\\TrackTrace\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Rudim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\RUP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "\\\\pfileserv01\\tool\\nugetserver\\packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.org/api/v2": {}
         },
         "frameworks": {
           "net6.0": {
@@ -51,7 +58,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -63,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
