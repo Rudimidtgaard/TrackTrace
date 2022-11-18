@@ -1,8 +1,29 @@
+using Microsoft.AspNetCore.StaticFiles;
+using System.ComponentModel;
+using System.Text.Json.Serialization;
+using TrackTrace.Data;
+using TrackTrace.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+{
+    options.ReturnHttpNotAcceptable = true;
+
+}).AddNewtonsoftJson(opts =>
+        opts.SerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter()))
+  .AddXmlDataContractSerializerFormatters()
+  ;
+
+builder.Services.AddScoped<DapperContext>();
+builder.Services.AddScoped<IDataProvider, DataProvider>();
+builder.Services.AddScoped<IEventRepository, EventRepository>();
+
+
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

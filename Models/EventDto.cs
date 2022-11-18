@@ -10,7 +10,6 @@ namespace TrackTrace.Models
         public EventClassifier Classifier { get; set; }
         public EventLevel Level { get; set; }
 
-
     }
 
 
